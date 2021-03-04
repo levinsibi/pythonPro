@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.2 (Python 3.9.2 on win32)" generated="20210303 20:44:42.557" rpa="false">
+<suite id="s1" name="TC" source="D:\pythonPro\TestCases\TC.robot">
+<test id="s1-t1" name="Testing using name1">
+<kw name="TestSample">
+<arguments>
+<arg>name1</arg>
+<arg>last1</arg>
+</arguments>
+<kw name="Launch Browser" library="SignupKeywords">
+<arguments>
+<arg>${Appurl}</arg>
+<arg>${browser}</arg>
+</arguments>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${Appurl}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20210303 20:45:09.276" level="INFO">Opening browser 'chrome' to base url 'https://www.facebook.com/r.php'.</msg>
+<status status="PASS" starttime="20210303 20:45:09.276" endtime="20210303 20:45:22.413"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210303 20:45:22.413" endtime="20210303 20:45:22.997"></status>
+</kw>
+<status status="PASS" starttime="20210303 20:45:09.276" endtime="20210303 20:45:22.997"></status>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<arguments>
+<arg>title Should Be</arg>
+<arg>Sign up for Faceboo | Facebook</arg>
+</arguments>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<doc>Verifies that the current page title equals ``title``.</doc>
+<arguments>
+<arg>Sign up for Faceboo | Facebook</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210303 20:45:23.317" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-14.png"&gt;&lt;img src="selenium-screenshot-14.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210303 20:45:23.005" endtime="20210303 20:45:23.317"></status>
+</kw>
+<msg timestamp="20210303 20:45:23.317" level="FAIL">Title should have been 'Sign up for Faceboo | Facebook' but was 'Sign up for Facebook | Facebook'.</msg>
+<status status="FAIL" starttime="20210303 20:45:22.997" endtime="20210303 20:45:23.317"></status>
+</kw>
+<status status="FAIL" starttime="20210303 20:45:22.997" endtime="20210303 20:45:23.317"></status>
+</kw>
+<kw name="Enter FirstName" library="SignupKeywords">
+<arguments>
+<arg>${fname}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${txt_fname}</arg>
+<arg>${fname}</arg>
+</arguments>
+<msg timestamp="20210303 20:45:23.325" level="INFO">Typing text 'name1' into text field 'name:firstname'.</msg>
+<status status="PASS" starttime="20210303 20:45:23.325" endtime="20210303 20:45:31.206"></status>
+</kw>
+<status status="PASS" starttime="20210303 20:45:23.317" endtime="20210303 20:45:31.206"></status>
+</kw>
+<kw name="Enter LastName" library="SignupKeywords">
+<arguments>
+<arg>${lname}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${txt_lname}</arg>
+<arg>${lname}</arg>
+</arguments>
+<msg timestamp="20210303 20:45:31.214" level="INFO">Typing text 'last1' into text field 'name:lastname'.</msg>
+<status status="PASS" starttime="20210303 20:45:31.214" endtime="20210303 20:45:31.534"></status>
+</kw>
+<status status="PASS" starttime="20210303 20:45:31.206" endtime="20210303 20:45:31.534"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210303 20:45:31.534" endtime="20210303 20:45:37.400"></status>
+</kw>
+<status status="FAIL" starttime="20210303 20:45:09.276" endtime="20210303 20:45:37.400"></status>
+</kw>
+<status status="FAIL" starttime="20210303 20:45:09.276" endtime="20210303 20:45:37.400" critical="yes">Title should have been 'Sign up for Faceboo | Facebook' but was 'Sign up for Facebook | Facebook'.</status>
+</test>
+<test id="s1-t2" name="Testing using name2">
+<kw name="TestSample">
+<arguments>
+<arg>name2</arg>
+<arg>last2</arg>
+</arguments>
+<kw name="Launch Browser" library="SignupKeywords">
+<arguments>
+<arg>${Appurl}</arg>
+<arg>${browser}</arg>
+</arguments>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${Appurl}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20210303 20:45:37.400" level="INFO">Opening browser 'chrome' to base url 'https://www.facebook.com/r.php'.</msg>
+<status status="PASS" starttime="20210303 20:45:37.400" endtime="20210303 20:45:55.509"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210303 20:45:55.509" endtime="20210303 20:45:55.637"></status>
+</kw>
+<status status="PASS" starttime="20210303 20:45:37.400" endtime="20210303 20:45:55.637"></status>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<arguments>
+<arg>title Should Be</arg>
+<arg>Sign up for Faceboo | Facebook</arg>
+</arguments>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<doc>Verifies that the current page title equals ``title``.</doc>
+<arguments>
+<arg>Sign up for Faceboo | Facebook</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210303 20:45:55.957" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-15.png"&gt;&lt;img src="selenium-screenshot-15.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210303 20:45:55.645" endtime="20210303 20:45:55.957"></status>
+</kw>
+<msg timestamp="20210303 20:45:55.957" level="FAIL">Title should have been 'Sign up for Faceboo | Facebook' but was 'Sign up for Facebook | Facebook'.</msg>
+<status status="FAIL" starttime="20210303 20:45:55.637" endtime="20210303 20:45:55.965"></status>
+</kw>
+<status status="FAIL" starttime="20210303 20:45:55.637" endtime="20210303 20:45:55.965"></status>
+</kw>
+<kw name="Enter FirstName" library="SignupKeywords">
+<arguments>
+<arg>${fname}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${txt_fname}</arg>
+<arg>${fname}</arg>
+</arguments>
+<msg timestamp="20210303 20:45:55.965" level="INFO">Typing text 'name2' into text field 'name:firstname'.</msg>
+<status status="PASS" starttime="20210303 20:45:55.965" endtime="20210303 20:45:56.133"></status>
+</kw>
+<status status="PASS" starttime="20210303 20:45:55.965" endtime="20210303 20:45:56.133"></status>
+</kw>
+<kw name="Enter LastName" library="SignupKeywords">
+<arguments>
+<arg>${lname}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${txt_lname}</arg>
+<arg>${lname}</arg>
+</arguments>
+<msg timestamp="20210303 20:45:56.133" level="INFO">Typing text 'last2' into text field 'name:lastname'.</msg>
+<status status="PASS" starttime="20210303 20:45:56.133" endtime="20210303 20:45:56.309"></status>
+</kw>
+<status status="PASS" starttime="20210303 20:45:56.133" endtime="20210303 20:45:56.309"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210303 20:45:56.309" endtime="20210303 20:45:58.589"></status>
+</kw>
+<status status="FAIL" starttime="20210303 20:45:37.400" endtime="20210303 20:45:58.589"></status>
+</kw>
+<status status="FAIL" starttime="20210303 20:45:37.400" endtime="20210303 20:45:58.589" critical="yes">Title should have been 'Sign up for Faceboo | Facebook' but was 'Sign up for Facebook | Facebook'.</status>
+</test>
+<test id="s1-t3" name="Testing using name3">
+<kw name="TestSample">
+<arguments>
+<arg>name3</arg>
+<arg>last3</arg>
+</arguments>
+<kw name="Launch Browser" library="SignupKeywords">
+<arguments>
+<arg>${Appurl}</arg>
+<arg>${browser}</arg>
+</arguments>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${Appurl}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20210303 20:45:58.589" level="INFO">Opening browser 'chrome' to base url 'https://www.facebook.com/r.php'.</msg>
+<status status="PASS" starttime="20210303 20:45:58.589" endtime="20210303 20:47:11.191"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210303 20:47:11.191" endtime="20210303 20:47:11.335"></status>
+</kw>
+<status status="PASS" starttime="20210303 20:45:58.589" endtime="20210303 20:47:11.335"></status>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<arguments>
+<arg>title Should Be</arg>
+<arg>Sign up for Faceboo | Facebook</arg>
+</arguments>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<doc>Verifies that the current page title equals ``title``.</doc>
+<arguments>
+<arg>Sign up for Faceboo | Facebook</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210303 20:47:11.711" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-16.png"&gt;&lt;img src="selenium-screenshot-16.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210303 20:47:11.383" endtime="20210303 20:47:11.711"></status>
+</kw>
+<msg timestamp="20210303 20:47:11.711" level="FAIL">Title should have been 'Sign up for Faceboo | Facebook' but was 'Sign up for Facebook | Facebook'.</msg>
+<status status="FAIL" starttime="20210303 20:47:11.335" endtime="20210303 20:47:11.711"></status>
+</kw>
+<status status="FAIL" starttime="20210303 20:47:11.335" endtime="20210303 20:47:11.711"></status>
+</kw>
+<kw name="Enter FirstName" library="SignupKeywords">
+<arguments>
+<arg>${fname}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${txt_fname}</arg>
+<arg>${fname}</arg>
+</arguments>
+<msg timestamp="20210303 20:47:11.719" level="INFO">Typing text 'name3' into text field 'name:firstname'.</msg>
+<status status="PASS" starttime="20210303 20:47:11.711" endtime="20210303 20:47:11.897"></status>
+</kw>
+<status status="PASS" starttime="20210303 20:47:11.711" endtime="20210303 20:47:11.897"></status>
+</kw>
+<kw name="Enter LastName" library="SignupKeywords">
+<arguments>
+<arg>${lname}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${txt_lname}</arg>
+<arg>${lname}</arg>
+</arguments>
+<msg timestamp="20210303 20:47:11.897" level="INFO">Typing text 'last3' into text field 'name:lastname'.</msg>
+<status status="PASS" starttime="20210303 20:47:11.897" endtime="20210303 20:47:12.049"></status>
+</kw>
+<status status="PASS" starttime="20210303 20:47:11.897" endtime="20210303 20:47:12.049"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210303 20:47:12.049" endtime="20210303 20:47:14.301"></status>
+</kw>
+<status status="FAIL" starttime="20210303 20:45:58.589" endtime="20210303 20:47:14.301"></status>
+</kw>
+<status status="FAIL" starttime="20210303 20:45:58.589" endtime="20210303 20:47:14.301" critical="yes">Title should have been 'Sign up for Faceboo | Facebook' but was 'Sign up for Facebook | Facebook'.</status>
+</test>
+<status status="FAIL" starttime="20210303 20:44:42.557" endtime="20210303 20:47:14.301"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="3">Critical Tests</stat>
+<stat pass="0" fail="3">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="3" id="s1" name="TC">TC</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
