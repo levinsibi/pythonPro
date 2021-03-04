@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.9.2 on win32)" generated="20210225 19:39:08.783" rpa="false">
+    <suite id="s1" name="Suites">
+        <suite id="s1-s1" name="TC1" source="D:\pythonPro\TestCases\TC1.robot">
+            <test id="s1-s1-t1" name="LoginTest">
+                <kw name="Login">
+                    <kw name="Open Browser" library="SeleniumLibrary">
+                        <doc>Opens a new browser instance to the optional ``url``.</doc>
+                        <arguments>
+                            <arg>${url}</arg>
+                            <arg>${browser}</arg>
+                        </arguments>
+                        <msg timestamp="20210225 19:39:11.771" level="INFO">Opening browser 'chrome' to base url
+                            'https://www.facebook.com/public/Fb-Login'.
+                        </msg>
+                        <status status="PASS" starttime="20210225 19:39:11.771"
+                                endtime="20210225 19:39:54.303"></status>
+                    </kw>
+                    <kw name="Input Text" library="SeleniumLibrary">
+                        <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+                        <arguments>
+                            <arg>id:email</arg>
+                            <arg>ab@g.com</arg>
+                        </arguments>
+                        <msg timestamp="20210225 19:39:54.303" level="INFO">Typing text 'ab@g.com' into text field
+                            'id:email'.
+                        </msg>
+                        <status status="PASS" starttime="20210225 19:39:54.303"
+                                endtime="20210225 19:39:55.236"></status>
+                    </kw>
+                    <kw name="Input Text" library="SeleniumLibrary">
+                        <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+                        <arguments>
+                            <arg>id:pass</arg>
+                            <arg>abcgd</arg>
+                        </arguments>
+                        <msg timestamp="20210225 19:39:55.236" level="INFO">Typing text 'abcgd' into text field
+                            'id:pass'.
+                        </msg>
+                        <status status="PASS" starttime="20210225 19:39:55.236"
+                                endtime="20210225 19:39:55.372"></status>
+                    </kw>
+                    <kw name="Click Element" library="SeleniumLibrary">
+                        <doc>Click the element identified by ``locator``.</doc>
+                        <arguments>
+                            <arg>id:loginbutton</arg>
+                        </arguments>
+                        <msg timestamp="20210225 19:39:55.372" level="INFO">Clicking element 'id:loginbutton'.</msg>
+                        <status status="PASS" starttime="20210225 19:39:55.372"
+                                endtime="20210225 19:39:55.744"></status>
+                    </kw>
+                    <status status="PASS" starttime="20210225 19:39:11.771" endtime="20210225 19:39:55.744"></status>
+                </kw>
+                <kw name="Close Browser" library="SeleniumLibrary">
+                    <doc>Closes the current browser.</doc>
+                    <status status="PASS" starttime="20210225 19:39:55.744" endtime="20210225 19:39:58.685"></status>
+                </kw>
+                <status status="PASS" starttime="20210225 19:39:11.771" endtime="20210225 19:39:58.685"
+                        critical="yes"></status>
+            </test>
+            <status status="PASS" starttime="20210225 19:39:08.861" endtime="20210225 19:39:58.685"></status>
+        </suite>
+        <status status="PASS" starttime="20210225 19:39:08.783" endtime="20210225 19:39:58.685"></status>
+    </suite>
+    <statistics>
+        <total>
+            <stat pass="1" fail="0">Critical Tests</stat>
+            <stat pass="1" fail="0">All Tests</stat>
+        </total>
+        <tag>
+        </tag>
+        <suite>
+            <stat pass="1" fail="0" id="s1" name="Suites">Suites</stat>
+            <stat pass="1" fail="0" id="s1-s1" name="TC1">Suites.TC1</stat>
+        </suite>
+    </statistics>
+    <errors>
+    </errors>
+</robot>
