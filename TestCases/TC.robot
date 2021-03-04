@@ -15,7 +15,7 @@ Testing using ${fname}
 TestSample
     [Arguments]  ${fname}  ${lname}
    Launch Browser  ${Appurl}  ${browser}
-#   below helps in continue on failure
+#   below helps in continue on failure steps
    Run Keyword And Continue On Failure  title Should Be               Sign up for Faceboo | Facebook
    Enter FirstName  ${fname}
    Enter LastName  ${lname}
